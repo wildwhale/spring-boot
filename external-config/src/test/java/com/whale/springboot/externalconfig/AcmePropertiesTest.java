@@ -17,8 +17,7 @@ import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @EnableAutoConfiguration
-//@ContextConfiguration(classes = AcmeProperties.class, initializers = ConfigFileApplicationContextInitializer.class)
-@ContextConfiguration(classes = AcmeProperties.class)
+@ContextConfiguration(classes = AcmeProperties.class, initializers = ConfigFileApplicationContextInitializer.class)
 public class AcmePropertiesTest {
 
     @Autowired
