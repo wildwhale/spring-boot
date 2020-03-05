@@ -5,6 +5,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.ConfigFileApplicationContextInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -15,7 +17,8 @@ import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @EnableAutoConfiguration
-@ContextConfiguration(classes = AcmeProperties.class, initializers = ConfigFileApplicationContextInitializer.class)
+//@ContextConfiguration(classes = AcmeProperties.class, initializers = ConfigFileApplicationContextInitializer.class)
+@ContextConfiguration(classes = AcmeProperties.class)
 public class AcmePropertiesTest {
 
     @Autowired
